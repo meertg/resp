@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header";
+import Hero from "./components/Hero";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+
+    <Layout>
+    <Header/>
+    <Hero/>
+    </Layout>
+      
+      
     </div>
   );
 }
 
 export default App;
+
+
+
+
+
+function Layout({children}){
+
+  const px = window.innerWidth;
+
+  return(
+  <div style={{width: '100%', padding: px > 768 ? '0 10%' : '10px'}}> 
+  {children}
+  </div>
+  );
+}

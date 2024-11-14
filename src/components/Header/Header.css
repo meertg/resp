@@ -1,0 +1,35 @@
+:root{
+  --green: #74C69D;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Roboto", serif;
+}
+
+header{
+  background-color: var(--green);
+  display: flex;
+  color:white;
+  justify-content: space-between;
+  .left{
+    display: flex;
+    align-items: center;
+
+    span{
+      font-size: 24px;
+    }
+
+    img{
+      width: 36px;
+    }
+
+  }
+
+  .right{
+    display: flex;
+  }
+}
