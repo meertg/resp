@@ -1,35 +1,35 @@
-:root{
+:root {
   --green: #74C69D;
 }
 
-*{
+* {
   box-sizing: border-box;
 }
 
-body{
+body {
   font-family: "Roboto", serif;
 }
 
-header{
+header {
   background-color: var(--green);
   display: flex;
-  color:white;
+  color: white;
   justify-content: space-between;
-  .left{
-    display: flex;
-    align-items: center;
+}
 
-    span{
-      font-size: 24px;
-    }
+header .left {
+  display: flex;
+  align-items: center;
+}
 
-    img{
-      width: 36px;
-    }
+header .left span {
+  font-size: 24px;
+}
 
-  }
+header .left img {
+  width: 36px;
+}
 
-  .right{
-    display: flex;
-  }
+header .right {
+  display: flex;
 }

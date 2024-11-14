@@ -1,14 +1,28 @@
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import Socials from "./components/Socials";
+import Connections from "./components/Connections";
+import Security from "./components/Security";
+import Team from "./components/Team";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
 
 
-    <Layout>
+    <Layout Color={'var(--green)'}>
     <Header/>
     <Hero/>
+    </Layout>
+    <Layout>
+    <Socials/>
+    <Connections/>
+    <Security/>
+    <Team/>
+    </Layout>
+    <Layout Color={'var(--green)'}>
+    <Footer/>
     </Layout>
       
       
@@ -22,13 +36,12 @@ export default App;
 
 
 
-function Layout({children}){
-
+function Layout({children,Color}){
   const px = window.innerWidth;
-
+  
   return(
-  <div style={{width: '100%', padding: px > 768 ? '0 10%' : '10px'}}> 
-  {children}
+  <div style={{width: '100%', padding: px > 768 ? '0 10%' : '10px', backgroundColor : Color ? Color : 'white'}}> 
+  	{children}
   </div>
   );
 }

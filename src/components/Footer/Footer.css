@@ -1,0 +1,26 @@
+.footer {
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+  margin: 4vh 0 0 0;
+}
+
+.footer .col {
+  display: flex;
+  gap: 1vw;
+  margin: 2.5vh 0;
+}
+
+.footer .col .facebooklogo {
+  width: 7px;
+}
+
+.footer .col img {
+  width: 14px;
+}
+
+.footer .col p {
+  font-size: 14px;
+  font-weight: 300;
+}

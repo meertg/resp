@@ -1,0 +1,41 @@
+.connections{
+  display: flex;
+  margin: 8vh;
+  gap: 10vw;
+  .col{
+    display: flex;
+
+    
+  }
+  span{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3vh;
+    button{
+      width: fit-content;
+      color:white;
+      background-color: black;
+      padding: 0.5rem 2rem;
+      border-radius: 8px;
+      border: none;
+    }
+    h1{
+      font-size: 28px;
+      margin: 0;
+      line-height: 160%;
+    }
+
+    h2{
+      margin: 0;
+      font-size: 14px;
+      font-weight: 400;
+      color: gray;
+    }
+  }
+
+  img{
+    width: 30vw;
+  }
+  
+}
