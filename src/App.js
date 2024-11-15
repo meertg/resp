@@ -5,6 +5,7 @@ import Connections from "./components/Connections";
 import Security from "./components/Security";
 import Team from "./components/Team";
 import Footer from "./components/Footer";
+import './App.css';
 
 function App() {
   return (
@@ -40,7 +41,7 @@ function Layout({children,Color}){
   const px = window.innerWidth;
   
   return(
-  <div style={{width: '100%', padding: px > 768 ? '0 10%' : '10px', backgroundColor : Color ? Color : 'white'}}> 
+  <div style={{width: '100%', padding: px > 760 ? '0 10%' : '10px', backgroundColor : Color ? Color : 'white'}}> 
   	{children}
   </div>
   );

@@ -15,6 +15,8 @@ header {
   display: flex;
   color: white;
   justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
 }
 
 header .left {
@@ -30,26 +32,32 @@ header .left img {
   width: 36px;
 }
 
-header .right { 
+header .right {
   display: flex;
+  align-items: center;
 }
 
+header .right ul {
+  margin: 0 10px;
+  list-style: none;
+}
 
+header .hamburger {
+  display: none;
+  cursor: pointer;
+}
 
-@media (max-width: 380px) {
-  html, body {
-    overflow-x: hidden;
-  
+header .hamburger img {
+  width: 30px;
+  height: auto;
+}
+
+@media (max-width: 760px) {
+  header .right ul {
+    display: none;
   }
-  header{
-    .right{
-      ul{
-        display: none;
-      }
-      .hamburgericon{
-      }
 
-    }
-    
+  header .hamburger {
+    display: block;
   }
 }
