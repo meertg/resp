@@ -13,6 +13,9 @@ export default function Header(){
       <ul>Services</ul>
       <ul>Contact</ul>
     </div>
+    <div className="hamburgericon">
+      <img src="./imgs/hamburger.svg" alt="" />
+    </div>
     </header>
   );
 }

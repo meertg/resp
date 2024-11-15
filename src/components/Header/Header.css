@@ -30,6 +30,26 @@ header .left img {
   width: 36px;
 }
 
-header .right {
+header .right { 
   display: flex;
+}
+
+
+
+@media (max-width: 380px) {
+  html, body {
+    overflow-x: hidden;
+  
+  }
+  header{
+    .right{
+      ul{
+        display: none;
+      }
+      .hamburgericon{
+      }
+
+    }
+    
+  }
 }
