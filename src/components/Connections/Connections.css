@@ -39,3 +39,13 @@
   }
   
 }
+
+@media(max-width: 760px){
+  .connections{
+    display: flex;
+    flex-direction: column;
+    .col img{
+      width: 100%;
+    }
+  }
+}

@@ -40,3 +40,13 @@
 .security img {
   width: 30vw;
 }
+
+@media(max-width: 760px){
+  .security{
+    display: flex;
+    flex-direction: column-reverse;
+    .col img{
+      width: 100%;
+    }
+  }
+}
